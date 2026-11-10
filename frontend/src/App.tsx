@@ -125,7 +125,10 @@ export default function App() {
     };
 
     try {
-      await streamQuery(query, onEvent, controller.signal);
+      await streamQuery(query, {
+        onEvent,
+        signal: controller.signal,
+      });
       setMessages((current) =>
         current.map((message) =>
           message.id === assistantId && message.status === "streaming"

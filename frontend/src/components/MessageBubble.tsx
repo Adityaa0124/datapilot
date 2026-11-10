@@ -54,7 +54,7 @@ export function MessageBubble({ message }: { message: ChatMessage }) {
             </div>
           )}
 
-          {!isUser && <StepRail steps={message.steps} />}
+          {!isUser && <StepRail steps={message.steps ?? []} />}
           {!isUser && message.result !== undefined && <ResultTable data={message.result} />}
 
           <div

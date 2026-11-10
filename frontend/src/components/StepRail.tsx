@@ -117,8 +117,8 @@ function FlowNodeCard({ node, status }: { node: FlowNode; status: FlowStatus }) 
   );
 }
 
-export function StepRail({ steps }: { steps: StepState[] }) {
-  if (steps.length === 0) {
+export function StepRail({ steps = [] }: { steps?: StepState[] }) {
+  if (!steps || steps.length === 0) {
     return null;
   }
 
