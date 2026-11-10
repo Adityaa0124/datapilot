@@ -1,3 +1,4 @@
+version: "1"
 services:
   - type: web
     name: datapilot
@@ -7,7 +8,6 @@ services:
     plan: free
     region: oregon
     healthCheckPath: /health
-    autoDeploy: true
     envVars:
       - key: ENABLE_EXTERNAL_SERVICES
         value: "false"
