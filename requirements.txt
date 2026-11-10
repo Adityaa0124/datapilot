@@ -11,6 +11,12 @@ python-dotenv>=1.0.0
 pyyaml>=6.0.0
 omegaconf>=2.3.0
 
+# SQL Safety & Parsing
+sqlglot>=25.0.0
+
+# LLM Providers
+langchain-openai>=0.1.0
+
 # Enterprise Infrastructure Drivers (Active when ENABLE_EXTERNAL_SERVICES=true)
 sqlalchemy>=2.0.30
 asyncmy>=0.2.9

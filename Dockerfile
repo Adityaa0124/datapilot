@@ -6,7 +6,7 @@ WORKDIR /app/frontend
 
 # Install dependencies
 COPY frontend/package.json ./
-RUN npm install --ignore-scripts
+RUN npm install --legacy-peer-deps --ignore-scripts
 
 # Build production distribution
 COPY frontend/ ./
