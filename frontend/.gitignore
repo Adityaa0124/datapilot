@@ -1,0 +1,6 @@
+# Frontend ignore rules
+# Avoid committing dependencies, build artifacts, and local environment files.
+node_modules/
+dist/
+*.tsbuildinfo
+.env
